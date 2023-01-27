@@ -16,6 +16,6 @@ OpenAI Baselines is a set of highly optimized, state-of-the-art reinforcement le
    npm install openai
    ```
 4. Enter your API in `chathpt.py`
-   ```py
+   ```python
    openai.api_key = "twoj-klucz-api"
    ```
