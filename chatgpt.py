@@ -1,13 +1,13 @@
 import openai
 
-# Ustawienie klucza API
-openai.api_key = "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"
+# Ustawienie klucza API https://beta.openai.com/account/api-keys
+openai.api_key = "twoj-klucz-api"
 
 # Twoje pytanie
 print("Zadaj mi pytanie ")
 pytanie = input()
 
-# Zadanie pytania openai
+# Wysłanie requesta
 response = openai.Completion.create(
     engine="text-davinci-003",
     prompt=f"{pytanie}",
