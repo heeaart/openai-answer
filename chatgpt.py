@@ -1,11 +1,16 @@
+import os
 import openai
+
 from colorama import init as colorama_init
 from colorama import Fore
+from dotenv import load_dotenv
+
+load_dotenv()
 
 colorama_init()
 
 # Ustawienie klucza API https://beta.openai.com/account/api-keys
-openai.api_key = "twoj-kluz-api"
+openai.api_key = (os.getenv('TOKEN-API'))
 
 # Twoje zapytanie
 def odp(wiadomosc):
@@ -25,5 +30,5 @@ while True:
         print(f"{Fore.RED}👋 Elo do zobaczenia")
         break
     else:
-        print(f"{Fore.BLUE}🤖 Bot: {odp(wiadomosc)} {Fore.BLACK} \n{Fore.YELLOW}⚠️Aby zakończyć napisz `Narka`")
+        print(f"{Fore.BLUE}🤖 Bot: {odp(wiadomosc)} {Fore.BLACK} \n{Fore.YELLOW}⚠️ Aby zakończyć napisz `Narka`")
 

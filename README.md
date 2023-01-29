@@ -11,11 +11,12 @@ OpenAI Baselines is a set of highly optimized, state-of-the-art reinforcement le
    ```sh
    git clone https://github.com/heeaart/openai-answer
    ```
-3. Install NPM packages
+3. Install all packages
    ```sh
-   npm install openai
+   pip install -r requirements.txt
    ```
-4. Enter your API in `chathpt.py`
-   ```python
-   openai.api_key = "twoj-klucz-api"
+4. Enter your API in `.env`
+   ```.env
+   TOKEN-API=tutaj-wklej-kod-api
    ```
+
